@@ -55,7 +55,10 @@ class lavla:
       os.makedirs(path)
     f = open(path,"a")
     if f == None:
-      print("Please add source.")
+      if source == None:
+        print("Please add source.")
+      else:
+        f.write(source)
       
     f.write(f.format(*pre))
       
