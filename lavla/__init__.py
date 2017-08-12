@@ -31,7 +31,19 @@ class lavla:
     c_PAGE_ALIAS = _pa
     _page_alias = c_PAGE_ALIAS
   
-  def new(name,path,pre):
+  def local(name,pre):
+    name = "".join([name,ext])
+    
+    for n = pre:
+      n = n.format(nm=_webname)
+    
+    f = open(path,"a")
+    if f == None:
+      print("Please add source.")
+      
+    f.write(f.format(*pre))
+    
+    def new(name,path,pre):
     name = "".join([name,ext])
     
     for n = pre:
