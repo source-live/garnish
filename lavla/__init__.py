@@ -12,6 +12,8 @@ c_WEB_NAME = ""
 c_PAGE_NAME = ""
 c_PAGE_ALIAS = ""
 
+ext = open(".ext","r")
+
 
 class lavla:
   _web_name = c_WEB_NAME
@@ -21,6 +23,7 @@ class lavla:
   
   
   def __init__(name,path,pre):
+    name = "".join([name,ext])
     path = os.path.join(path,name)
     if not os.path.exists(path):
       os.makedirs(path)
@@ -28,10 +31,7 @@ class lavla:
     if f == None:
       print("Please add source.")
       
-    for n in pre:
-      source = f.format(n[1]=n[2])
-      print(source)
-      f.write(source)
+    f.write(f.format(*pre))
       
   def source(data)
     source = data
