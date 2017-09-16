@@ -1,8 +1,7 @@
-## Welcome to Lavla
-#### [![Documentation Status](https://readthedocs.org/projects/lavla/badge/?version=latest)](http://lavla.readthedocs.io/en/latest/?badge=latest)
+## Welcome to Garnish
 Standard Text Readme
 ```
-                            Lavla
+                            Garnish
 ~~~~~~~~~~~~~~~~~~
 ~~ Readme
 ~~~~~~~~~~~~~~~~~~
